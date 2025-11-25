@@ -33,3 +33,15 @@ function multi(x,y)
 }
 const result = multi(5, 4);
 console.log("Multiplication of x and y is ", result);
+// Arrow function
+function divion(a, b)
+{
+    return a / b;
+}
+const division = (a, b) => {
+    console.log("Division of p and q is ", a / b);
+};
+
+const printHello = () => { 
+    console.log("Hello from Arrow Function!");
+};
