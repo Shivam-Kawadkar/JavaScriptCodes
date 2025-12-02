@@ -30,8 +30,18 @@ checkWin = () => {
         let [a, b, c] = pattern;
         if (boxes[a].innerText !== '' && boxes[a].innerText === boxes[b].innerText && boxes[b].innerText === boxes[c].innerText) {
             console.log(`${boxes[a].innerText} has won !`);
+            document.getElementById('winner').innerText = `${boxes[a].innerText} has won !`;
             boxes.forEach(box => box.disabled = true);
             return;
         }
     }
 };
+resetgame = () => {
+    boxes.forEach(box => {
+        box.innerText = '';
+        box.disabled = false;
+    });
+    document.getElementById('winner').innerText = 'Winner';
+    turnO = true;
+};
+document.getElementById('btn-reset').addEventListener('click', resetgame);
