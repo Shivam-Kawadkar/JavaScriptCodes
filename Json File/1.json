@@ -1,0 +1,7 @@
+{
+    "name": "Shivam",
+    "Age": 19,
+    "City": "Indore",
+    "IsAdmin": true,
+    "shopitem":["oil","suger","rice"]
+}

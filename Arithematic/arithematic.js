@@ -44,9 +44,18 @@
 
 //Logical operator
 
-let a = 2;
-let b = 3;
+// let a = 2;
+// let b = 3;
 
-console.log("cond1&&cond2", a > b && b === 0);
-console.log("cond1||cond2", a >b ||b===3);
-console.log("cond1!cond2", !(a<b));
+// console.log("cond1&&cond2", a > b && b === 0);
+// console.log("cond1||cond2", a >b ||b===3);
+// console.log("cond1!cond2", !(a<b));
+
+//Factorial of number
+let fact = 1;
+let num = 5;
+for(let i = 1;i<=num;i++)
+{
+    fact *= i;
+}
+console.log("Factorial of", num, "is", fact);
